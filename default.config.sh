@@ -1,0 +1,2 @@
+USERNAME=donkey
+PASSWORD=password
