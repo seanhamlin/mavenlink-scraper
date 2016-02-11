@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs
 
 # Load credentials.
 . /Users/sean.hamlin/projects/mavenlink-scraper/config.sh

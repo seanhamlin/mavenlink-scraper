@@ -2,7 +2,7 @@ var fs = require('fs');
 var utils = require('utils');
 var casper = require('casper').create({
   verbose: true,
-  logLevel: 'debug',
+  logLevel: 'error',
   pageSettings: {
     loadImages: false,
     loadPlugins: false,
@@ -80,6 +80,6 @@ casper.repeat(accounts.length, function() {
 casper.run(function () {
   fs.remove('accounts.json');
   fs.write('accounts.json', JSON.stringify(accounts), 'w');
-  this.echo("Accounts CSV written");
+  this.echo("Accounts JSON written");
   this.exit();
 });
